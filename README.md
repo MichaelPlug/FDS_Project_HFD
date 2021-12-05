@@ -7,9 +7,9 @@ https://www.kaggle.com/fedesoriano/heart-failure-prediction
 ## Authors:
 - Elios Buzo
 
-- Anthony Giusti
+- Laurentiu Adrian Cristurean
 
-- Lauren ...
+- Anthony Giusti
 
 - Ludovico Lentini
 
