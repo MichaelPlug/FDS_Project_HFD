@@ -1,3 +1,16 @@
-# FDSproject 21/22 -Heart Disease Prediction
+# FDS project 21/22 - Heart Disease Prediction
 
-Anthony, Lauren, Ludovico, Elios, Michele
+
+### Dataset source:
+https://www.kaggle.com/fedesoriano/heart-failure-prediction
+
+## Authors:
+- Elios Buzo
+
+- Anthony Giusti
+
+- Lauren ...
+
+- Ludovico Lentini
+
+- Michele Spina
