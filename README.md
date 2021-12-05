@@ -1,3 +1,3 @@
-# Fundamentals of Data Science project 21/22 about heart disease prediction
+# FDSproject 21/22 -Heart Disease Prediction
 
 Anthony, Lauren, Ludovico, Elios, Michele
