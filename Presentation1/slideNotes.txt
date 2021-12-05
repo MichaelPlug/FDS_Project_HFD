@@ -1,0 +1,21 @@
+SLIDE 1
+Predict if a patient is at risk for heart disease based on their clinical data
+
+It could be intersting to determinate wich factors influence more the probabily of a heart disease. It could be useful for the patient health to recognize the status of risk and and be able to prevent it it time.
+
+SLIDE 2
+Dataset be used: https://www.kaggle.com/fedesoriano/heart-failure-prediction
+
+We intend to implement a logistic regression algorithm, since the value for heart disease risk is binary (YES/NO)
+
+We will apply patient anagraphic data, like and sex, and data from the clinical tests, like blood pressure
+
+SLIDE 3
+We intend to split the dataset and use one part for the traing set and the second one for the evaluation
+
+For patient safety it will be necessary to minimize the number of false negatives,  maximizing the AUROC
+
+
+
+
+
