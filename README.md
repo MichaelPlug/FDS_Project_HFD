@@ -9,6 +9,7 @@ To reach the goal we intend apply **logistic regrassion**, **GDA** and eventualy
 ### Dataset source :paperclip:
 https://www.kaggle.com/fedesoriano/heart-failure-prediction
 
+
 ### Deadlines :date:
 - [x] **6th December**: Fist presentation
 - [ ] **16th December**: Second presentation
