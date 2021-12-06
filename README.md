@@ -4,7 +4,7 @@
 https://www.kaggle.com/fedesoriano/heart-failure-prediction
 
 ### Deadlines
-- [ ] **6th December**: Fist presentation
+- [x] **6th December**: Fist presentation
 - [ ] **16th December**: Second presentation
 - [ ] **26th December**: Written report submitted
 
