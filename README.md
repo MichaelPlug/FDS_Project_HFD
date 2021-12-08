@@ -9,6 +9,7 @@ To reach the goal we intend apply **logistic regrassion**, **GDA** and eventualy
 ### Dataset source :paperclip:
 https://www.kaggle.com/fedesoriano/heart-failure-prediction
 
+
 ### Deadlines :date:
 - [x] **6th December**: Fist presentation
 - [ ] **16th December**: Second presentation
@@ -20,7 +21,7 @@ https://www.kaggle.com/fedesoriano/heart-failure-prediction
 <img src="https://i2.wp.com/9to5google.com/wp-content/uploads/sites/4/2021/07/new-google-groups-logo.png?ssl=1" alt="Google Group Icon" width="13"/> [Google Group](https://groups.google.com/u/1/a/di.uniroma1.it/g/fds-21-22
 )
 
-## Authors :busts_in_silhouette: :black_nib:
+## Authors :black_nib:
 - Elios Buzo
 - Laurentiu Adrian Cristurean
 - Anthony Giusti
