@@ -16,6 +16,7 @@ To reach the goal we intend apply **logistic regrassion**, **GDA** and eventualy
 [Heart Failure Prediction Dataset](https://www.kaggle.com/fedesoriano/heart-failure-prediction)
 #### Other sources
 - [Dealing with missing values in Python](https://www.analyticsvidhya.com/blog/2021/05/dealing-with-missing-values-in-python-a-complete-guide/)
+- [Guide to Encoding Categorical Values in Python](https://pbpython.com/categorical-encoding.html) (we're not using that yet)
 #### Useful links
 - [Google Drive](https://drive.google.com/drive/u/1/folders/1vdwBkEDXcKa6vKXDMDjzAo4xX2o2BBUs)
 - [Google Group](https://groups.google.com/u/1/a/di.uniroma1.it/g/fds-21-22)
