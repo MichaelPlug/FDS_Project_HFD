@@ -8,7 +8,7 @@ To reach the goal we intend apply **logistic regrassion**, **GDA** and eventualy
 
 ### :date: Deadlines 
 - [x] **6th December**: Fist presentation
-- [ ] **16th December**: Second presentation
+- [ ] **17th December**: Second presentation
 - [ ] **26th December**: Written report submitted
 
 ### :paperclip: Links
