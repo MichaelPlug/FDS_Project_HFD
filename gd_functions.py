@@ -14,10 +14,15 @@ def sigmoid(x):
     
     Input:
     x: it's the input data matrix. The shape is (N, H)
+
     Output:
     g: The sigmoid of the input x
     '''
-    g = 1 / (1 + np.exp(-x))
+    
+    #####################################################
+    ##                 YOUR CODE HERE                  ##
+    #####################################################
+    g = 1/(1+np.exp(-x))
     return g
 
 def log_likelihood(theta,features,target):
@@ -32,9 +37,14 @@ def log_likelihood(theta,features,target):
     Output:
     log_g: the log likehood of theta according to data x and label y
     '''
-      
-    log_l=((target * np.log(sigmoid(features @ theta))+(1-target)*np.log(1-sigmoid(features @ theta))).sum()) / len(features)
+    
+    #####################################################
+    ##                 YOUR CODE HERE                  ##
+    #####################################################
 
+    h = predictions(features, theta)
+    eps = np.nextafter(0,1)
+    log_l = np.mean(target*np.log(np.maximum(h,eps))+(1-target)*np.log(np.maximum(1-h, eps)))
     return log_l
 
 
@@ -49,9 +59,14 @@ def predictions(features, theta):
     Output:
     preds: the predictions of the input features
     '''
-      
-    response=sigmoid(features @ theta)
-    preds = np.where(response >=0.5, 1, 0)
+    
+    #####################################################
+    ##                 YOUR CODE HERE                  ##
+    #####################################################
+    
+    #Check it
+    preds = sigmoid(theta.dot(features.T))
+#    preds = sigmoid(theta.T.dot(features))
     return preds
 
 
@@ -59,6 +74,7 @@ def update_theta(theta, target, preds, features, lr):
     '''
     Function to compute the gradient of the log likelihood
     and then return the updated weights
+
     Input:
     theta: the model parameter matrix.
     target: the label array
@@ -70,14 +86,19 @@ def update_theta(theta, target, preds, features, lr):
     theta: the updated model parameter matrix.
     '''
     
-    # (712, 1) @ (712, 8)
-    log_lik_deriv = (((target - sigmoid(features @ theta)).transpose() @ features).transpose() / len(features))
-    theta = theta + lr * log_lik_deriv
+    #####################################################
+    ##                 YOUR CODE HERE                  ##
+    #####################################################
+    der_likelihood = np.sum((target - preds)[:,np.newaxis] * features, axis=0)
+    
+    theta += lr * der_likelihood
+    
     return theta 
 
 def gradient_ascent(theta, features, target, lr, num_steps):
     '''
     Function to execute the gradient ascent algorithm
+
     Input:
     theta: the model parameter matrix.
     target: the label array
@@ -92,11 +113,17 @@ def gradient_ascent(theta, features, target, lr, num_steps):
 
     log_likelihood_history = np.zeros(num_steps)
     
+    #####################################################
+    ##                 YOUR CODE HERE                  ##
+    #####################################################
     
     for step in range(num_steps):
-      
-        log_likelihood_history[step]=log_likelihood(theta,features,target)
-        preds=predictions(features, theta)
-        theta=update_theta(theta, target, preds, features, lr)
-    
+        preds = predictions(features, theta)
+        theta = update_theta(theta, target, preds, features, lr)
+        log_likelihood_history[step] = log_likelihood(theta, features, target)
+        '''
+        log_likelihood_history[step] = log_likelihood(theta, features, target)
+        preds = predictions(features, theta)
+        theta = update_theta(theta, target, preds, features, lr)
+        '''
     return theta, log_likelihood_history
