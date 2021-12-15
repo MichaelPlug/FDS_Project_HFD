@@ -20,6 +20,7 @@ To reach the goal we intend apply **logistic regrassion**, **GDA** and eventualy
 #### Useful links
 - [Google Drive](https://drive.google.com/drive/u/1/folders/1vdwBkEDXcKa6vKXDMDjzAo4xX2o2BBUs)
 - [Google Group](https://groups.google.com/u/1/a/di.uniroma1.it/g/fds-21-22)
+- [Scikit-learn](https://scikit-learn.org/stable/)
 
 ## :black_nib: Authors
 - Elios Buzo
